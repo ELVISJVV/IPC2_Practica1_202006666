@@ -1,0 +1,22 @@
+digraph L{
+    node [shape=box fillcolor="#FFEDBB" style = filled]
+    
+    subgraph cluster_p{
+        label="Orden de clientes"
+        bgcolor = "#398D9C"
+      
+        Fila1[label = "Se han entregado todos los pedidos", fillcolor="yellow"];
+        
+    
+       
+     
+    }
+
+
+}
+    
+    
+    
+    
+    
+    
