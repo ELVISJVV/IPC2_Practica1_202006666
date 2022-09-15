@@ -7,26 +7,26 @@
             bgcolor = "#398D9C"
         Columna1[label=<<TABLE  BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
             <TR>
-            <TD  colspan="2">asad</TD>
+            <TD  colspan="2">pepe</TD>
             </TR>
 
             <TR>
 
             <TD>Cant. Shucos</TD>
-            <TD>5</TD>
+            <TD>3</TD>
             </TR>
             <TR>
             <TD>Ingredientes</TD>
-            <TD>Salami<br/></TD>
+            <TD>Costilla<br/>Chorizo<br/></TD>
             </TR >
 
             <TR>
             <TD>Tiempo Orden</TD>
-            <TD>7.5 min</TD>
+            <TD>27.0 min</TD>
             </TR>
             <TR>
             <TD>Tiempo Total</TD>
-            <TD>7.5 min</TD>
+            <TD>27.0 min</TD>
             </TR>
 
             </TABLE>>, fillcolor=yellow]; {rank = same;Columna1} 

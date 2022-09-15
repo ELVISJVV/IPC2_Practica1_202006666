@@ -265,7 +265,7 @@ if __name__ == '__main__':
                 generarGraphviz(listaOrdenes)
             elif size <=0:
                 print("")
-                print("NO HAY DATOS EN LA COLA")
+                print("NO HAY PEDIDOS POR ENTREGAR")
                 print("")
 
             else: 

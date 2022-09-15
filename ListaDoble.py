@@ -55,56 +55,7 @@ class ListaDoble:
 
             temp = temp.siguiente
 
-
-    def obtenerPaciente(self, nombre):
-
-        temp = self.primero
-
-        while temp != None:
-
-            if nombre.lower() == temp.dato.nombre.lower(): #cuando encuentre el elemento deseado retornara el dato que contiene el nodo
-                return temp.dato # se retorna el dato
-            
-            temp = temp.siguiente #el temp recorre la lista
-        
-        if temp == None: #en el caso que no se haya encontrado el paciente.
-
-            print('Paciente no encontrado.') 
-
-    #obtener un elemento por la posición en la lista
-    def obtenerElemento(self, posicion):
-
-        i = 1 #nuestra lista comienza en la posición 1
-        temp = self.primero
-
-        while temp != None:
-
-            if i == posicion:
-                # print(temp.dato)
-                return temp.dato
-
-            i += 1
-            temp = temp.siguiente
-        
-        if temp == None:
-
-            print('Elemento no encontrado.')
     
-    def verPacientes(self):
-        
-        actual = self.primero
-        i = 1
-        print('|------------------- Pacientes -------------------|')
-        print()
-        
-        while actual != None:
-            
-            print('→ '+ str(i)+ '. ' + "Paciente: " + str(actual.getDato().getNombre()) + "   Edad: " + str(actual.getDato().getEdad()))
-            print()
-            
-            i += 1 
-            actual = actual.getSiguiente()
-
     def returnElement(self, posicion):
         
         actual = self.primero
@@ -120,44 +71,7 @@ class ListaDoble:
             actual = actual.getSiguiente()
             i += 1
 
-    def __getitem__(self, indice):
-        if indice >= 0 and indice < self.size:
-            actual = self.ultimo
 
-            for i in range(indice):
-                actual = actual.siguiente
-
-            return actual.getDato()
-        else:
-            raise Exception('Índice no válido. Está por fuera del rango.')
-
-    def eliminar(self, dato):
-        actual = self.primero
-        eliminado = False
-
-        if actual is None:
-            eliminado = False
-        elif actual.dato == dato:
-            self.primero = actual.siguiente
-            self.primero.anterior = None
-            eliminado = True
-        elif self.ultimo.dato == dato:
-            self.ultimo = self.ultimo.anterior
-            self.ultimo.siguiente = None
-            eliminado = True
-        else:
-            while actual:
-                if actual.dato == dato:
-                    # Antes: 2 = 3 = 5 = 7 = 11
-                    # Actual: 3
-                    # Después: 2 = 5 = 7 = 11
-                    actual.anterior.siguiente = actual.siguiente
-                    actual.siguiente.anterior = actual.anterior
-                    eliminado = True
-                actual = actual.siguiente
-
-        if eliminado:
-            self.size -= 1
 
     def borrarNodo(self, dato):
         #creamos un nodo temporal
